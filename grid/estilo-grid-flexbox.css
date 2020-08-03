@@ -7,6 +7,8 @@
     --padding-menu: 15px 20px;
     
   }
+
+/* Tipografia Montserrat */
 html, body {
     margin: 0;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
@@ -27,6 +29,7 @@ html, body {
 .lateral-esquerda {grid-area: 3 / 1 / 4 / 2;padding: 16px}
 .lateral-direita {grid-area: 3 / 3 / 4 / 4;padding: 16px}
 .rodape {grid-area: 4 / 1 / 5 / 4;padding: 16px}
+
  /* Cores das Divs */
 .vermelho{background-color: rgb(117, 27, 45);}
 .laranja{ background-color: orange; }
@@ -55,75 +58,6 @@ div.container-menu ul li{
 background: linear-gradient(180deg, rgba(228,228,228,1) 0%, rgba(255,255,255,1) 50%, rgba(232,232,232,1) 100%);
 
 }
-li{
-    display: none;
+h5{
+    padding: var(--padding-menu);
 }
-
-li:focus-within > ul{
-    visibility: visible;
-    opacity: 1;
-    display: block;
-}
-
-
-#imagem_fundo {
-    background: url("fundo.jpg");
-    height: 100%;
-    text-align: center;
-    background-size: cover;
-}
-#titulo {
-    color: white;
-    padding-top: 20%;
-    font-size: 70px;
-    line-height: 0.6;
-    
-}
-#subtitulo {
-    color: white;
-    margin-left: 20%;
-    margin-right: 20%;
-    border-top: 3px solid white;
-    text-shadow: 1px 1px  black;
-}
-#acao {
-    color: white;
-    border: 1px white solid;
-    padding: 10px 20px 10px 20px ;
-}
-.icone {
-    width: 51px;
-}
-section {
-    padding: 20px;
-    float: left;
-}
-.destaque {
-    background-color: #f7f7f7;
-}
-.imgeco {
-    width: 90%;
-    height: 30%;
-}
-.coluna {
-    float: left;
-    padding: 0 5%;
-    position: relative;
-}
-.dois {
-    width: 40%;
-}
-.quatro {
-    width: 15%;
-}
-.tres {
-    width: 29%;
-    padding: 5px  10px;
-}
-.justificado {
-    text-align: justify;
-}
-.centralizado {
-    text-align: center;
-}
-
