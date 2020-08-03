@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+ /* Variáveis */
+:root {
+    --cor-padrao: #333333;
+    --padding-containers: 16px;
+    --padding-default: 5px 10px;
+    --padding-menu: 15px 20px;
+    
+  }
+html, body {
+    margin: 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+ /* Grid Layout com valores fracionados */
+.container{
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+    grid-template-rows: 1fr 1fr 6fr 1fr;
+    gap: var(--padding-default);
+    color: white;
+    height: 100vh;
+} 
+ /* Layout parametrizado com grids. */
+.topo {grid-area: 1 / 1 / 2 / 4; padding: 16px;}
+.menu {grid-area: 2 / 1 / 3 / 4;}
+.principal {grid-area: 3 / 2 / 4 / 3; padding: 16px}
+.lateral-esquerda {grid-area: 3 / 1 / 4 / 2;padding: 16px}
+.lateral-direita {grid-area: 3 / 3 / 4 / 4;padding: 16px}
+.rodape {grid-area: 4 / 1 / 5 / 4;padding: 16px}
+ /* Cores das Divs */
+.vermelho{background-color: rgb(117, 27, 45);}
+.laranja{ background-color: orange; }
+.pink{ background-color: pink; color: purple;}
+.verde{ background-color: green; }
+.azul{ background-color: rgb(64, 64, 233);}
+.roxo{ background-color: purple; }
+ /* FlexBox no nome e no menu. */
+div.container-menu{ 
+    display: flex; 
+    justify-content: space-between;
+}
+/* FlexBox no nome e nos itens do menu. */
+div.container-menu ul{
+display: flex;
+justify-content: space-between;
+}
+
+div.container-menu ul li{
+    list-style: none;
+    padding: var(--padding-menu);
+    margin: 0px;
+    border: 1px solid #f2f2f2;
+    color: var(--cor-padrao);
+    background: rgb(228,228,228);
+background: linear-gradient(180deg, rgba(228,228,228,1) 0%, rgba(255,255,255,1) 50%, rgba(232,232,232,1) 100%);
+
+}
+li{
+    display: none;
+}
+
+li:focus-within > ul{
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+
+#imagem_fundo {
+    background: url("fundo.jpg");
+    height: 100%;
+    text-align: center;
+    background-size: cover;
+}
+#titulo {
+    color: white;
+    padding-top: 20%;
+    font-size: 70px;
+    line-height: 0.6;
+    
+}
+#subtitulo {
+    color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-top: 3px solid white;
+    text-shadow: 1px 1px  black;
+}
+#acao {
+    color: white;
+    border: 1px white solid;
+    padding: 10px 20px 10px 20px ;
+}
+.icone {
+    width: 51px;
+}
+section {
+    padding: 20px;
+    float: left;
+}
+.destaque {
+    background-color: #f7f7f7;
+}
+.imgeco {
+    width: 90%;
+    height: 30%;
+}
+.coluna {
+    float: left;
+    padding: 0 5%;
+    position: relative;
+}
+.dois {
+    width: 40%;
+}
+.quatro {
+    width: 15%;
+}
+.tres {
+    width: 29%;
+    padding: 5px  10px;
+}
+.justificado {
+    text-align: justify;
+}
+.centralizado {
+    text-align: center;
+}
+
